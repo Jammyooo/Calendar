@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>紧凑型日历组件</title>
+    <title>自适应日历</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             padding: 10px;
-            width: 300px;
+            width: 240px; /* 根据日历内容宽度调整 */
             color: white;
         }
         .calendar-header {
@@ -50,7 +50,7 @@
             padding: 5px;
             display: grid;
             grid-template-columns: repeat(7, 1fr); /* 每行 7 列 */
-            grid-gap: 5px; /* 间距调整为 5px */
+            grid-gap: 8px; /* 间距增加 */
             text-align: center;
         }
         .weekday {
@@ -59,7 +59,7 @@
             color: #ddd;
         }
         .calendar-day {
-            padding: 8px; /* 日期单元格尺寸 */
+            padding: 6px; /* 调整日期单元格尺寸 */
             font-size: 10px; /* 日期字体 */
             border-radius: 50%;
         }
